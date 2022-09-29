@@ -1,5 +1,5 @@
 name: "Add Testimonial Request"
-description: If you are using thumbor and your site or product is not listed here, please share your words with us and we'll include your logo and a short description on how you are using it.
+description: If you are using thumbor and your site or product is not listed on Testimonials' page, please share your words with us and we'll include your logo and a short description on how you are using it.
 title: "[Testimonial] - <title>"
 labels: [
   "testimonial"
@@ -8,7 +8,7 @@ body:
   - type: input
     id: user_name
     attributes:
-      label: "Username"
+      label: "Name"
       description: Your name
       placeholder: "Jane doe"
     validations:
@@ -16,7 +16,7 @@ body:
   - type: input
     id: user_email
     attributes:
-      label: "User email"
+      label: "Email"
       description: Your email
       placeholder: "jane_doe@mail.com"
     validations:
