@@ -1,1 +1,650 @@
-Hello World
+<!doctype html>
+<html class="no-js" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="utf-8">
+    <title>thumbor - open-source smart on-demand image cropping, resizing and filters </title>
+    <meta name="description"
+          content="Thumbor is a smart imaging service. It enables on-demand crop, resizing and flipping of images. It features a very smart detection of important points in the image for better cropping and resizing, using state-of-the-art face and feature detection algorithms (more on that in Detection Algorithms).">
+
+    <meta property="og:title" content="thumbor - open-source smart on-demand image cropping, resizing and filters "/>
+    <meta property="og:type" content="product"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:url" content="http://thumbor.org/"/>
+    <meta property="og:image"
+          content="http://s2.glbimg.com/YKD67lgiIHKmR-he0aFVGRsU15M=/1200x630/http://s.glbimg.com/en/ho/static/thumbor/thumbor_open_graph.jpg"/>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta property="og:site_name" content="thumbor.org"/>
+    <meta property="og:description"
+          content="Thumbor is a smart imaging service. It enables on-demand crop, resizing and flipping of images. It features a very smart detection of important points in the image for better cropping and resizing, using state-of-the-art face and feature detection algorithms (more on that in Detection Algorithms)."/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@heynemann"/>
+    <meta name="twitter:creator" content="@fabiomiranda"/>
+    <meta name="twitter:creator" content="@cezarsa"/>
+
+    <meta name="twitter:title" content="thumbor - open-source smart on-demand image cropping, resizing and filters "/>
+    <meta name="twitter:description"
+          content="Thumbor is a smart imaging service. It enables on-demand crop, resizing and flipping of images. It features a very smart detection of important points in the image for better cropping and resizing, using state-of-the-art face and feature detection algorithms (more on that in Detection Algorithms)."/>
+    <meta name="twitter:image:src"
+          content="http://s2.glbimg.com/YKD67lgiIHKmR-he0aFVGRsU15M=/1200x630/http://s.glbimg.com/en/ho/static/thumbor/thumbor_open_graph.jpg"/>
+
+    <link rel="author" href="https://plus.google.com/111960956531003852465"/>
+    <link rel="author" href="https://plus.google.com/115193653741200978021"/>
+    <link rel="author" href="https://plus.google.com/+CezarEspinola"/>
+
+    <meta itemprop="name" content="thumbor - open-source smart on-demand image cropping, resizing and filters ">
+    <meta itemprop="description"
+          content="Thumbor is a smart imaging service. It enables on-demand crop, resizing and flipping of images. It features a very smart detection of important points in the image for better cropping and resizing, using state-of-the-art face and feature detection algorithms (more on that in Detection Algorithms).">
+    <meta itemprop="image"
+          content="http://s2.glbimg.com/YKD67lgiIHKmR-he0aFVGRsU15M=/1200x630/http://s.glbimg.com/en/ho/static/thumbor/thumbor_open_graph.jpg">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Raleway:900|Montserrat:400,700'
+          rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/thumbor-web.app.min.css%3Ff38af409.css">
+
+
+</head>
+<body itemscope itemtype="http://schema.org/Product">
+<div class="mobile-nav">
+    <ul>
+        <li class="ms"><a href="http://thumbor.readthedocs.org/en/latest/getting_started.html">GETTING STARTED</a></li>
+        <li class="ms"><a href="http://thumbor.readthedocs.org/en/latest/">DOCUMENTATION</a></li>
+        <li class="ms"><a href="https://github.com/thumbor/thumbor">REPOSITORY</a></li>
+        <li class="ms"><a href="https://github.com/thumbor/thumbor/issues">REPORT AN ISSUE</a></li>
+    </ul>
+</div>
+
+<div class="contents">
+
+    <header>
+        <a href="javascript:" class="burger">
+            <div></div>
+        </a>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li class="ib ms logo"><a href="/"></a></li>
+                    <li class="ib ms"><a href="http://thumbor.readthedocs.org/en/latest/getting_started.html">GETTING
+                        STARTED</a></li>
+                    <li class="ib ms"><a href="http://thumbor.readthedocs.org/en/latest/">DOCUMENTATION</a></li>
+                    <li class="ib ms"><a href="https://github.com/thumbor/thumbor">REPOSITORY</a></li>
+                    <li class="ib ms"><a href="https://github.com/thumbor/thumbor/issues">REPORT AN ISSUE</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main">
+                <div class="logo"></div>
+                <div class="logo-mobile"></div>
+                <div class="banner">open-source
+                    smart on-demand image cropping, resizing and filters
+                </div>
+            </div>
+            <a href="javascript:" class="learn-more ms">LEARN MORE</a>
+        </div>
+    </header>
+
+
+    <div class="main-window">
+
+
+        <a name="getting-started" class="getting-started-anchor"></a>
+
+        <div class="container">
+
+            <section class="get-started">
+                <p>
+                    Thumbor is a smart imaging service. It enables on-demand crop, resizing and flipping of images. It
+                    features a very smart detection of important points in the image for better cropping and resizing,
+                    using state-of-the-art face and feature detection algorithms (more on that in Detection Algorithms).
+                </p>
+
+                <p class="second-line">
+                    Save time and money in your company with Thumbor.
+                </p>
+
+                <a href="http://thumbor.readthedocs.org/en/latest/getting_started.html" class="btn btn-blue">
+                    <span>GET STARTED</span>
+                </a>
+
+                <a href="http://thumbor.readthedocs.org/en/latest" class="bottom-link">
+                    or see the documentation
+                </a>
+            </section>
+
+        </div>
+        <section class="why-thumbor">
+            <div class="stripe">
+                <div class="picture sm-container"></div>
+                <div class="container">
+                    <div class="text">
+                        <div class="col-5-5">
+                            <p class="title">
+                                No more headless bodies
+                            </p>
+                            <p>
+                                With the most advanced face detection technology, Thumbor ensure you to have the best
+                                image crop possible. Everytime a face is detected, it will crop the image around it,
+                                making sure the most important parts of the picture are preserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stripe">
+                <div class="picture sm-container"></div>
+                <div class="container">
+                    <div class="text">
+                        <div class="col-5-5">
+                            <p class="title">
+                                Images everywhere
+                            </p>
+                            <p>
+                                Thumbor allows users to store and load images from anywhere needed. It's really simple
+                                to implement a new loader or storage. It comes packaged with file, http, redis and mongo
+                                implementations for loaders and storages. Just pick what makes sense for you or
+                                implement your own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stripe">
+                <div class="picture sm-container"></div>
+                <div class="container">
+                    <div class="text">
+                        <div class="col-5-5">
+                            <p class="title">
+                                Filter to enhance
+                            </p>
+                            <p>
+                                Thumbor has support for image filters. Filters usually apply some post-processing to the
+                                images and they can be chained and applied in order. Thumbor's extensible nature allows
+                                you to write your own filters, but it comes with some pre-packaged filters of its own.
+                                Brightness, contrast, grayscale, red-eye and blur are a few samples.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stripe">
+                <div class="picture sm-container"></div>
+                <div class="container">
+                    <div class="text">
+                        <div class="col-5-5">
+                            <p class="title">
+                                Thumbor supports webp
+                            </p>
+                            <p>
+                                WebP is a new format for lossy and lossless images that compresses a lot better than
+                                jpeg and png. Thumbor allows users to specify that browsers that support WebP
+                                automatically get it. This can have a dramatic increase in the performance of your
+                                website. Besides WebP, Thumbor also uses some tactics to reduce the file size even
+                                further.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="size-comparison container">
+            <div class="col-4 sm-half">
+                <div class="image-bubble jpg"
+                     style="background-image: url('http://s2.glbimg.com/Sk0KJVodWhHED1juq9-tRoPgdA4=/280x280/smart/http://s.glbimg.com/en/ho/static/thumbor/size-comparison.jpg');">
+                    <div class="ribbon">
+                        <strong>
+                            19
+                            <span class="unit">kb</span>
+                        </strong>
+                        <span class="format">jpg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 sm-half">
+                <div class="image-bubble webp"
+                     style="background-image: url('http://s2.glbimg.com/Sk0KJVodWhHED1juq9-tRoPgdA4=/280x280/smart/http://s.glbimg.com/en/ho/static/thumbor/size-comparison.jpg');">
+                    <div class="ribbon">
+                        <strong>
+                            12
+                            <span class="unit">kb</span>
+                        </strong>
+                        <span class="format">thumbor webp</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <form class="thumborize" action="http://thumborize.me/">
+                    <p class="title">Put your website on a diet. Test it now!</p>
+                    <div class="subtitle">Fill your url below to see how many KB Thumbor would help you save.</div>
+
+                    <input name="url" type="url" value="http://"/>
+                    <input type="submit" class="btn btn-blue btn-light" value="THUMBORIZE ME"/>
+                </form>
+            </div>
+        </section>
+        <section class="benefits container">
+            <div class="sub-header">
+                <div class="rw black">BENEFITS</div>
+                <div class="sub-title">
+                    <p>what’s in it for you</p>
+                </div>
+            </div>
+
+            <div class="col col-3 benefit devs">
+                <div class="ms bold title">FOR DEVELOPERS</div>
+                Remember that time when you had to re-generate all your images due to a new size? Thumbor makes all that
+                pain go away. With a comprehensive set of libraries that support it in several languages, as well as
+                loads of plug-ins, you'll never need another imaging server.
+            </div>
+
+            <div class="col col-3 benefit ops">
+                <div class="ms bold title">FOR OPERATIONS</div>
+                Thumbor decouples imaging from storage and loading. Unparalleled extensibility allows easy tailoring to
+                your own infrastructure requirements. Store your images the way you want. Off-load OpenCV processing to
+                a specific farm? Thumbor's your best friend. Use NFS to store images? It's done!
+            </div>
+
+            <div class="col col-3 benefit designers">
+                <div class="ms bold title">FOR DESIGNERS</div>
+                Want to change the size of all images on your site without suffering? Just use a new size and Thumbor
+                will do the hard work. High quality pictures without compromising performance? Check. Best possible User
+                Experience? Check. Thumbor's got your back.
+            </div>
+
+            <div class="col col-3 benefit pms">
+                <div class="ms bold title">FOR PROJECT MANAGERS</div>
+                Save time and money by removing imaging stories from your backlog. Thumbor's a complete solution,
+                ranging from uploading images to rendering them with smart face-recognition cropping. Need a rotated,
+                black & white, rounded-border version of your images? You got it!
+            </div>
+
+        </section>
+        <section class="testimonials">
+
+            <div class="container">
+                <div class="sub-header">
+                    <div class="rw black">TESTIMONIALS</div>
+                    <div class="sub-title">
+                        <p>what people are saying about thumbor</p>
+                    </div>
+                </div>
+
+                <div class="top-testimonial">
+                    <div class="logo properati"></div>
+                    <div class="quote col-4">Thumbor made our lives better. We moved to Thumbor and now, we cannot live
+                        without it
+                    </div>
+                    <div class="author bold">Properati</div>
+                </div>
+
+                <div class="testimonial-list">
+                    <div class="col col-3 testimonial">
+                        <div class="logo yipit"></div>
+                        <div class="quote">Thumbor allows Yipit to iterate quickly on new designs. Our initial Thumbor
+                            installation took less than an hour to set up, and we haven't had to spend much time
+                            thinking about it since then.
+                        </div>
+                        <div class="author bold">Yipit</div>
+                    </div>
+
+                    <div class="col col-3 testimonial">
+                        <div class="logo oony"></div>
+                        <div class="quote">With Thumbor we can quickly iterate and make changes to our layouts serving
+                            the optimal image format each time. Thumbor is awesome!
+                        </div>
+                        <div class="author bold">oony</div>
+                    </div>
+
+                    <div class="col col-3 testimonial">
+                        <div class="logo viadeo"></div>
+                        <div class="quote">Thumbor helps us in decoupling applications from our storage backend. We were
+                            able to move from a centralized NFS storage to a distributed storage with a simple plug-in.
+                            Thumbor is really comfortable for Ops.
+                        </div>
+                        <div class="author bold">Viadeo</div>
+                    </div>
+
+                    <div class="col col-3 testimonial">
+                        <div class="logo threadless"></div>
+                        <div class="quote">We use Thumbor to generate mobile thumbnails that requires dealing with
+                            masks, feature trimming, transparent images, and replacing backgrounds. Thumbor made this
+                            possible and simple.
+                        </div>
+                        <div class="author bold">Threadless</div>
+                    </div>
+                </div>
+
+                <div class="new-testimonial">
+                    <a href="https://github.com/thumbor/thumbor-org/issues/new?assignees=&labels=testimonial&template=TESTIMONIALS.yml" class="white ms button">SEND YOURS</a>
+                    <a href="/testimonials" class="grey link">or see more testimonials</a>
+                </div>
+            </div>
+
+            <div id="testimonials-wrapper">
+                <ul>
+                    <li class="ib">
+                        <div class="logo properati"></div>
+                        <div class="quote">Thumbor made our lives better. We moved to Thumbor and now, we cannot live
+                            without it
+                        </div>
+                        <div class="author bold">Properati</div>
+                    </li>
+
+                    <li class="ib">
+                        <div class="logo yipit"></div>
+                        <div class="quote">Thumbor allows Yipit to iterate quickly on new designs. Our initial Thumbor
+                            installation took less than an hour to set up, and we haven't had to spend much time
+                            thinking about it since then.
+                        </div>
+                        <div class="author bold">Yipit</div>
+                    </li>
+
+                    <li class="ib">
+                        <div class="logo oony"></div>
+                        <div class="quote">With Thumbor we can quickly iterate and make changes to our layouts serving
+                            the optimal image format each time. Thumbor is awesome!
+                        </div>
+                        <div class="author bold">oony</div>
+                    </li>
+
+                    <li class="ib">
+                        <div class="logo viadeo"></div>
+                        <div class="quote">Thumbor helps us in decoupling applications from our storage backend. We were
+                            able to move from a centralized NFS storage to a distributed storage with a simple plug-in.
+                            Thumbor is really comfortable for Ops.
+                        </div>
+                        <div class="author bold">Viadeo</div>
+                    </li>
+
+                    <li class="ib">
+                        <div class="logo threadless"></div>
+                        <div class="quote">We use Thumbor to generate mobile thumbnails that requires dealing with
+                            masks, feature trimming, transparent images, and replacing backgrounds. Thumbor made this
+                            possible and simple.
+                        </div>
+                        <div class="author bold">Threadless</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="testimonials-pager">
+                <ul>
+                </ul>
+            </div>
+
+
+        </section>
+        <section class="the-team container">
+            <div class="sub-header">
+                <div class="rw black">THE TEAM</div>
+                <div class="sub-title">
+                    <p>who make this happen</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-4 bernardo" href="#">
+                    <div class="picture ib-middle"></div>
+                    <div class="picture-mobile ib-middle"></div>
+                    <div class="user-info ib-middle">
+                        <a class="bold name" href="https://github.com/heynemann">Bernardo Heynemann</a>
+                        <div class="title">Founder and active commiter</div>
+                        <a class="twitter it" href="http://twitter.com/heynemann">@heynemann</a>
+                    </div>
+                </div>
+
+                <div class="col col-4 cezar" href="#">
+                    <div class="picture ib-middle"></div>
+                    <div class="picture-mobile ib-middle"></div>
+                    <div class="user-info ib-middle">
+                        <a class="bold name" href="https://github.com/cezarsa">Cezar Sá Espinola</a>
+                        <div class="title">Active commiter</div>
+                        <a class="twitter it" href="http://twitter.com/cezarsa">@cezarsa</a>
+                    </div>
+                </div>
+
+                <div class="col col-4 fabio" href="#">
+                    <div class="picture ib-middle"></div>
+                    <div class="picture-mobile ib-middle"></div>
+                    <div class="user-info ib-middle">
+                        <a class="bold name" href="https://github.com/fabiomcosta">Fabio M. Costa</a>
+                        <div class="title">Founder</div>
+                        <a class="twitter it" href="http://twitter.com/fabiomiranda">@fabiomiranda</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-contributors">
+                <a href="https://github.com/thumbor/thumbor/graphs/contributors" class="grey link">
+                    ...and <span class="contributors-count">144</span> more contributors
+                </a>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="report">Want to report something?
+                <a href="https://github.com/thumbor/thumbor/issues">Create an issue</a>
+            </div>
+
+            <a class="right logo" href="/">thumbor</a>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript" src="assets/scripts/jquery.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery-scrollspy.js"></script>
+<script type="text/javascript" src="assets/scripts/breakpoints.js"></script>
+<script type="text/javascript" src="assets/scripts/iscroll.js"></script>
+
+<script type="text/javascript" src="assets/scripts/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/thumbor-web.app.min.js%3F89ebee27"></script>
+
+
+<script>
+    var testimonialsMobileCtrl = new TestimonialsMobileCtrl($('#testimonials-wrapper'));
+</script>
+
+
+<script>
+    var header = $('header');
+    var ctrl = new HeaderCtrl(header);
+</script>
+
+
+<script>
+    $(function () {
+        var breakpoints = new BreakpointsCtrl(header);
+        var pictures = $('.why-thumbor .stripe .picture');
+        var sizes = [1, 601, 801, 1281, 1441, 1681, 1921];
+        var sampleImages = {
+            1: [],
+            601: [],
+            801: [],
+            1281: [],
+            1441: [],
+            1681: [],
+            1921: []
+        };
+
+        var stripeImages = {
+            1: [],
+            601: [],
+            801: [],
+            1281: [],
+            1441: [],
+            1681: [],
+            1921: []
+        };
+
+        breakpoints.setThumborServer('http://s2.glbimg.com');
+
+        sampleImages[1].push('QMPFXB3uDBYO3UlJgjeJbc-hjc8=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[601].push('50slP2uCDLYdW0EUbBv2fYe7trw=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[801].push('vf9X7fyNZTEm2WH5bp0JQXDAXfo=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[1281].push('j5OFv54Fi4M6hdtPpPNhAuYUiXY=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[1441].push('Its9MvzIm7gChIUt7KoAbhfcBEw=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[1681].push('n8y-ul6tZnbLlKfnvEzd4KQ9ap4=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+        sampleImages[1921].push('Jbk5mFuTWYLrXH4zUGN96aAH1zs=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image1.jpg');
+
+        sampleImages[1].push('AigM7J6BkvbDvpdz_zheItCp0WA=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[601].push('WkpUU_jw-qS5odxGafhNiurOvmU=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[801].push('BNPR7WwQefgtSaiPSe9eXKx6TGo=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[1281].push('OQqceVKiU03otqtJHYxpDgNeQHM=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[1441].push('nDYcN_nNcaR53qDiJPrVFLYfsSg=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[1681].push('eDIw5QnO29LhGntjR9l5HOg3Src=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+        sampleImages[1921].push('7dAhqV96zoUoV2hWwLwr4eLqg70=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image2.jpg');
+
+        sampleImages[1].push('ve7Us51RXVcSXasW-ZMIfHSouaM=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[601].push('nTaBPvNWGA1m6yDs_R3qOfH607I=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[801].push('Q8qjgYGb5Wwo_qQ77--_uEAkpQU=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[1281].push('s0zhCiZl1Xp95EINXuoJTslSSbc=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[1441].push('5l99rT1JkEb8q7rp-mqMGf1h9aw=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[1681].push('QmKc--IlPMVye6ZsxNK2FPEPD80=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+        sampleImages[1921].push('j-Rv_ELk8kRt_U-2-p5osAtsbEA=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image3.jpg');
+
+        sampleImages[1].push('-9svsEzoq5bv4D6P8308HDgEKvk=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[601].push('6Dec0jOdVSfMq2ma-IQEmmjFvnc=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[801].push('b5EFYZ0F28UTakLpn5RrA3ZKiZg=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[1281].push('AHpfkhTdcWsqYAwEaVsDSlWD4kQ=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[1441].push('xFJ5wJ-bhK8Qa0WB0qG-h8nVjgI=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[1681].push('4XZqaT67cBDsRTDJHd83P9t9dbg=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+        sampleImages[1921].push('-Qlk3aTITVnWYrMQrCD_UeXbKPk=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image4.jpg');
+
+        sampleImages[1].push('o5XtR8618yTv4MpAddEP6K2COFo=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[601].push('Ojlh1csFWOQk52_3mdBnOcsSzQA=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[801].push('isZFVaaeuZLMKg7ppVycD7HFbTw=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[1281].push('wxgayOdSB3ukosNPFNz5hVBxiKU=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[1441].push('05SdMnMLcVSolj4N_HO-LPuI7ok=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[1681].push('pCGcVUykhk9OzgfnyTRzOl5NJrU=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+        sampleImages[1921].push('Tnw6i6bcrR6ZR644POKTLSO_WfE=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image5.jpg');
+
+        sampleImages[1].push('rZbR_dBLimIhmL6EnmH1bCDJkGc=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[601].push('iZpKANBlWrF2j9obOlAEMiP1R30=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[801].push('UVqTbtFt4rqXci7YKFJP5JO70h4=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[1281].push('Lgo9OjU2dMQFN-5g85CsAxL8AQQ=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[1441].push('d3I57Qh2UV2MUwf_PsDWsOQ7Jrw=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[1681].push('nlhLcBQ-5FrI6DBmCEr0vTLWDt8=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+        sampleImages[1921].push('WLr4Saq1mtVOvzN4NKlGQCsmZnY=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image6.jpg');
+
+        sampleImages[1].push('HMkKTdPlSVR1D7y-wNIunsww3BA=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[601].push('HaPQbFXkt14GL2bRkd4GerjuvV0=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[801].push('VIBr6w7R0zfMNAFHSQyd_XBlrTU=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[1281].push('ZEcF9ietmx6AyoL8wsxNfX-ym1Q=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[1441].push('nT_Pjgqp0Ax1AcZ5N17Z9VGsC4c=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[1681].push('VgtyGpM_GGcYMM8ZY8TpWi1ge7s=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+        sampleImages[1921].push('uCZgVm1oL-JGyODvtuGVo6KGhEA=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image7.jpg');
+
+        sampleImages[1].push('FyBvdgHq97Hl40jjX9wmznowxrU=/600x960/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[601].push('mLVeYCffPbe1rwjnVHE9nocChdI=/800x1280/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[801].push('IM6zP9U9HpbsRv1NiVNYkO216i4=/1280x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[1281].push('bAL2qg4nkabydWHAiyJz8nKBk7w=/1440x1024/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[1441].push('sToOEoy94jMYidPcVXroxQnb6Cc=/1680x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[1681].push('GtMtWfDjp78azRjp87xZPvLj150=/1920x1200/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+        sampleImages[1921].push('Wa_8ocfhKdIZhPsvN5eyuXuSOFU=/2560x1440/http://s.glbimg.com/en/ho/static/thumbor/sample-image8.jpg');
+
+
+        stripeImages[1].push('aOi98Ir7ENMYpBeLNpvIe_2eBTI=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[601].push('M3FsRRwL4kvPYiI482QxjggK2LI=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[801].push('TLfbIEG7HOO-gfYm1NnNqyYpK4o=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[1281].push('yP1cwBSy2i3Welt_RjHj38e4GlY=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[1441].push('B8YZM3YBaqfBudqbnCaMbG4A67A=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[1681].push('0h98dVOEix4ZT_EbaBOobX4lQq8=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+        stripeImages[1921].push('8dnrdqg3mM2APh1tZF8fs6G5xZ0=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-1.jpg');
+
+        stripeImages[1].push('XEihkADahoWzE8XUtFx0SWkEWUw=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[601].push('9jsaDZR9qcXy6U6cAiCoDShp5es=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[801].push('164JSTPA_ptip2kK0YAY8xWVB5w=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[1281].push('JnbytmI90a-qSEJiiolNJEs7A3M=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[1441].push('8z8xx_jgRuKzZdGuEfwi1kegHmM=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[1681].push('eUfcvxgkfVOXMaXJtNdhFNnTqSQ=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+        stripeImages[1921].push('pXLe-1b_7a-84RsyqMXqchjDc2E=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-2.jpg');
+
+        stripeImages[1].push('5ywAKVutdxwFIQ3RITI1S1L5RIU=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[601].push('A-Esv-PKvfcD7kHePAswEXL0_K0=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[801].push('AFS8LnHqH4qxznbX4A2_dD3W4wI=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[1281].push('Vb-DnRApEwbUyInvotNCKS_lIgE=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[1441].push('YtoQl_T9DvwUzrchvz6nydz5caw=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[1681].push('_OOiW28ZcPnFnoe2vrcIUElvZlE=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+        stripeImages[1921].push('zIU4tz4v1RFLMDxOea5Kw7D_WZs=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-3.jpg');
+
+        stripeImages[1].push('gzXpGge9QYM9EeFGt7NAGeQPKgA=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[601].push('5UC0dy4dIfq2UtsUDpTPlw6W3Ds=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[801].push('epsYZ-ixGirZCmCp31JjSMWmgYU=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[1281].push('VrfM9wP5R9ldRxRGgSVr07q5SC0=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[1441].push('xCfhwS15ByfypPjvcBeQpQjYiqY=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[1681].push('Oq_y92WgMiPQWa41B73TTkDEJvI=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+        stripeImages[1921].push('L8EAdMhpOQfbcqbc7OADPagL7iA=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-4.jpg');
+
+        stripeImages[1].push('7nedv65iKzEf-NCIC_jOhcm84kM=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[601].push('pBROHG5ggV_52Ef7mQXXLJFF5Qw=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[801].push('c6ntFewAEhegceqtjBH8BbdSHdo=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[1281].push('koJ1vnXU2LuQXwr2M1y3G9fSAAE=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[1441].push('xzkxsxgi_hPP1THzxTcQGPwlgf4=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[1681].push('TxpsI7RVk7Dz224sa6TA-vW0rms=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+        stripeImages[1921].push('7DBdA8NXZ9zwbnYqXJC-hIhqf8o=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-5.jpg');
+
+        stripeImages[1].push('OeoaNiWaPd_elBybUjVr1ATKOWo=/600x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[601].push('N5v0oVtnZUzbzQVPrfmwSWkwP5I=/400x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[801].push('mQWfcXwwxMOdsV1sb4twcoUpAMc=/640x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[1281].push('Y_gjV5m7mTXnyVlCtIzBq9-ones=/720x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[1441].push('HnOz-6_eUHJqGJB-iyaocylK_C8=/840x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[1681].push('GIVWux-HAOBRkp7aKK2nrMG_pXw=/960x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+        stripeImages[1921].push('8eCkaLVxV2MDEjdMl6HTd7yMAtI=/1280x350/smart/http://s.glbimg.com/en/ho/static/thumbor/why-thumbor-6.jpg');
+
+
+        breakpoints.addBreakpoint(1, header, sampleImages[1]);
+        breakpoints.addBreakpoint(601, header, sampleImages[601]);
+        breakpoints.addBreakpoint(801, header, sampleImages[801]);
+        breakpoints.addBreakpoint(1281, header, sampleImages[1281]);
+        breakpoints.addBreakpoint(1441, header, sampleImages[1441]);
+        breakpoints.addBreakpoint(1681, header, sampleImages[1681]);
+        breakpoints.addBreakpoint(1921, header, sampleImages[1921]);
+
+        pictures.each(function (pictureIndex) {
+            for (var i = 0; i < sizes.length; i++) {
+                var size = sizes[i];
+                var image = stripeImages[size][pictureIndex];
+                var element = pictures.eq(pictureIndex);
+
+                breakpoints.addBreakpoint(size, element, image);
+            }
+            ;
+        })
+    });
+</script>
+
+<script>window.viewportUnitsBuggyfill.init();</script>
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-54638301-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

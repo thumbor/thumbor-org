@@ -1,0 +1,159 @@
+header.testimonials-header {
+    width: 100%;
+    height: auto;
+}
+
+.testimonials-page {
+    margin-top: 131px;
+
+    .testimonial-list {
+        margin-top: 55px;
+        text-align: left;
+
+        li {
+            position: relative;
+            margin-bottom: 55px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ddd;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+        }
+
+        .info {
+            margin-left: 90px;
+
+            .company {
+                padding-top: 16px;
+                font-size: 20px;
+                line-height: 16px;
+                letter-spacing: -1px;
+
+                a {
+                    color: #333;
+                    opacity: .999;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+
+            .summary {
+                margin-top: 14px;
+                font-size: 14px;
+                line-height: 18px;
+                color: #666;
+
+            }
+
+            a {
+                color: #006de0;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .quote {
+                position: relative;
+                margin-top: 40px;
+                font-size: 16px;
+                line-height: 26px;
+                font-style: italic;
+                color: #333;
+                -webkit-font-smoothing: antialiased;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -28px;
+                    left: -28px;
+                    @include desktop-sprite(quote-left);
+                    z-index: -1;
+                }
+
+                p {
+                    margin-bottom: 16px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .form {
+        margin-top: 55px;
+        text-align: left;
+
+        .title {
+            font-size: 26px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            color: #666;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        input, textarea {
+            @include box-sizing(border-box);
+            margin-top: 10px;
+            padding: 0 10px;
+            width: 100%;
+            height: 40px;
+            border: solid 1px #999;
+            border-radius: 3px;
+            color: #333;
+            font-size: 14px;
+            line-height: 18px;
+
+            &.error {
+                border-color: red;
+            }
+        }
+
+        textarea {
+            padding-top: 12px;
+            height: 220px;
+        }
+
+        .submit {
+            float: right;
+        }
+
+        .new, .success {
+            &.hidden {
+                display: none;
+            }
+        }
+
+        .success {
+            font-size: 14px;
+            line-height: 18px;
+
+            p {
+                margin-top: 0;
+            }
+
+            .title {
+                font-size: 20px;
+                color: #39b54a;
+                margin-top: 30px;
+                margin-bottom: 14px;
+            }
+        }
+
+    }
+}

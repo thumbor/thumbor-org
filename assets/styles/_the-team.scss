@@ -1,0 +1,135 @@
+.the-team {
+    margin-top: 100px;
+
+    .row {
+        font-size: 0;
+        margin-top: 49px;
+    }
+
+    %align-left {
+        text-align: left;
+    }
+
+    $contributor-mobile: "bernardo-mobile", "cezar-mobile", "fabio-mobile", "caricio-mobile";
+    $i: 1;
+    @each $contributor in bernardo, cezar, fabio, caricio {
+        .#{$contributor} {
+            @extend %align-left;
+            .picture {
+                @include desktop-sprite($contributor);
+            }
+            .picture-mobile {
+                display: none;
+                @include use-sprite(nth($contributor-mobile, $i));
+            }
+        }
+
+        $i: $i + 1;
+    }
+
+    .user-info {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .name {
+        color: #333;
+        font-size: 18px;
+        letter-spacing: -0.7px;
+        opacity: .999;
+        @include transition(opacity 100ms linear);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .twitter {
+        font-size: 15px;
+        color: #006de0;
+        opacity: .999;
+        @include transition(opacity 100ms linear);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .title {
+        @extend .twitter;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    .link {
+        display: block;
+        font-style: italic;
+        font-size: 16px;
+        margin-top: 18px;
+        text-decoration: underline;
+
+        &.grey {
+            color: #666;
+        }
+    }
+
+    .more-contributors {
+        padding-top: 20px;
+        letter-spacing: -0.3px;
+
+        a {
+            @include transition(color 100ms linear);
+
+            &:hover {
+                color: #006de0;
+            }
+        }
+    }
+
+    @include breakpoint-mobile {
+        .col-4 {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .bernardo, .fabio, .cezar, .caricio {
+            margin-bottom: 20px;
+
+            .picture {
+                display: none;
+            }
+
+            .picture-mobile {
+                display: inline-block;
+            }
+        }
+
+        .name {
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 12px;
+        }
+
+        .twitter {
+            font-size: 12px;
+        }
+
+        .more-contributors {
+            padding-top: 6px;
+
+            .link {
+                margin-top: 0;
+            }
+        }
+    }
+
+    @include breakpoint-mobile {
+        margin-top: 50px;
+
+        .row {
+            margin-top: 25px;
+        }
+    }
+}

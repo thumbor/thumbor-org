@@ -1,0 +1,349 @@
+header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: none 0 0 no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%));
+    }
+
+    nav {
+        @include box-sizing(border-box);
+        text-align: left;
+        margin-top: 15px;
+        @include transition(background-color 100ms ease-out);
+        position: relative;
+        z-index: 10000;
+
+        .container {
+            padding: 27px 0;
+        }
+
+        li {
+            margin-right: 30px;
+            @include transition(opacity 200ms linear);
+
+            &.logo {
+                @include transition(opacity 200ms linear, margin 300ms ease-in-out);
+                margin-right: 0;
+
+                a {
+                    @include transition(width 300ms ease-in-out);
+                    display: block;
+                    margin-top: -2px;
+                    @include desktop-sprite(logo-small);
+                    width: 0;
+                    overflow: hidden;
+                }
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+
+            a {
+                font-size: 16px;
+                color: #fff;
+                @include text-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+            }
+        }
+
+        &.static {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            margin-top: 0;
+        }
+
+        &.opaque {
+            background-color: #282828;
+            @include box-shadow(0 3px 0 0 rgba(0, 0, 0, .2));
+
+            li.logo {
+                margin-right: 30px;
+
+                a {
+                    width: image-width(sprite-file($common, logo-small));
+                }
+            }
+        }
+    }
+
+    .main {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -80px;
+        height: 160px;
+        text-align: center;
+        z-index: 1000;
+
+        .breakpoint-1 & {
+            opacity: 1 !important;
+        }
+
+        .logo {
+            @include desktop-sprite(logo);
+            margin: 0 auto 20px;
+        }
+
+        .logo-mobile {
+            @include use-sprite(logo-mobile);
+            display: none;
+            margin: 0 auto 10px;
+        }
+
+        .banner {
+            width: 390px;
+            margin: 0 auto;
+            font-size: 26px;
+            line-height: 1.23;
+            letter-spacing: -0.5px;
+            color: #fff;
+            font-style: italic;
+            @include text-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+        }
+    }
+
+    .learn-more {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+        color: #fff;
+        z-index: 1000;
+        opacity: .999;
+        @include text-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+        @include transition(opacity 100ms linear);
+
+        &:hover {
+            opacity: .8;
+        }
+
+        .breakpoint-1 & {
+            opacity: 1 !important;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            display: none;
+            @include use-sprite(mobile-arrow-down);
+            margin: 13px auto 0;
+            margin-left: -1 * image-width(sprite-file($common, mobile-arrow-down)) / 2;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            @include desktop-sprite(arrow);
+            margin: 13px auto 0;
+        }
+    }
+
+    .burger {
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 26px;
+        padding-top: 7px;
+        height: 20px;
+        z-index: 12000;
+        cursor: pointer;
+
+        div {
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 3px;
+            @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 14px;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                border-radius: 3px;
+                @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 21px;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                border-radius: 3px;
+                @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+            }
+        }
+    }
+
+    @include breakpoint-mobile {
+        .burger {
+            display: block;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .main {
+            .logo {
+                display: none;
+            }
+
+            .logo-mobile {
+                display: block;
+            }
+
+            .banner {
+                font-size: 16px;
+                line-height: 1.25;
+                width: 250px;
+            }
+        }
+
+        .learn-more {
+            font-size: 10px;
+            padding-bottom: 36px;
+
+            &:before {
+                display: block;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    @include breakpoint-retina {
+        .main {
+            .logo-mobile {
+                display: block;
+            }
+        }
+    }
+}
+
+body, html {
+    @include breakpoint-mobile {
+        &.locked {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+    }
+}
+
+.contents {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include transition(left 300ms ease-in-out, width 300ms ease-in-out);
+
+    @include breakpoint-mobile {
+        &:before {
+            content: '';
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            z-index: -1;
+            @include transition(opacity 300ms linear, visibility 300ms linear, z-index 300ms linear);
+        }
+
+        &.hidden {
+            position: fixed;
+            top: 0;
+            left: 80%;
+            overflow: hidden;
+            /*width: 20%;*/
+            height: 100vh;
+
+            &:before {
+                z-index: 10000;
+                opacity: .65;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.mobile-nav {
+    display: none;
+
+    @include breakpoint-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #fff;
+        z-index: 1000;
+        overflow: hidden;
+        white-space: nowrap;
+        @include transition(left 300ms ease-in-out);
+
+        li {
+            height: 49px;
+            line-height: 49px;
+            border-top: 1px solid #e5e5e5;
+
+            a {
+                font-size: 16px;
+                color: #333;
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                &:active {
+                    background-color: #eee;
+                }
+            }
+
+            &:first-child {
+                border-top: none;
+            }
+        }
+
+
+        &.visible {
+            /*position: relative;*/
+            left: 0;
+            /*display: block;*/
+        }
+    }
+}

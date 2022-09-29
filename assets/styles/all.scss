@@ -1,0 +1,17 @@
+@import "compass";
+@import "compass/reset";
+$common: sprite-map("common/*.png");
+$retina: sprite-map("retina/*.png");
+@import "base";
+@import "header";
+@import "get-started";
+@import "why-thumbor";
+@import "benefits";
+@import "testimonials";
+@import "the-team";
+@import "testimonials_page";
+@import "footer";
+
+a {
+  text-decoration: none;
+}

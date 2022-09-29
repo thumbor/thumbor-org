@@ -1,0 +1,47 @@
+name: "Add Testimonial Request"
+description: If you are using thumbor and your site or product is not listed here, please share your words with us and we'll include your logo and a short description on how you are using it.
+title: "[Testimonial] - <title>"
+labels: [
+  "testimonial"
+]
+body:
+  - type: input
+    id: user_name
+    attributes:
+      label: "Username"
+      description: Your name
+      placeholder: "Jane doe"
+    validations:
+      required: false
+  - type: input
+    id: user_email
+    attributes:
+      label: "User email"
+      description: Your email
+      placeholder: "jane_doe@mail.com"
+    validations:
+      required: false
+  - type: input
+    id: company_name
+    attributes:
+      label: "Company name"
+      description: Company name
+      placeholder: "Thumbor"
+    validations:
+      required: true
+  - type: input
+    id: company_website
+    attributes:
+      label: "Company website"
+      description: Company website
+      placeholder: "thumbor.org"
+    validations:
+      required: false
+  - type: textarea
+    id: testimonial
+    attributes:
+      label: "Testimonial"
+      description: Your testimonial
+      placeholder: "Thumbor is very nice!"
+    validations:
+      required: false

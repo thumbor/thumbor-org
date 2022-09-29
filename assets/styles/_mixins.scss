@@ -1,0 +1,44 @@
+@mixin breakpoint-mobile {
+    @media (max-width: 640px)  { @content; }
+}
+
+@mixin breakpoint-retina {
+    @media
+        (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2),
+        (max-width: 640px) and (   min--moz-device-pixel-ratio: 2),
+        (max-width: 640px) and (     -o-min-device-pixel-ratio: 2/1),
+        (max-width: 640px) and (        min-device-pixel-ratio: 2),
+        (max-width: 640px) and (                min-resolution: 192dpi),
+        (max-width: 640px) and (                min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+@mixin desktop-sprite($sprite) {
+    background-image: sprite-url($common);
+    background-position: sprite-position($common, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: image-height(sprite-file($common, $sprite));
+    width: image-width(sprite-file($common, $sprite));
+}
+
+
+// From https://github.com/Gaya/Retina-Sprites-for-Compass
+// Sprite mixin, works perfectly with standard defines
+@mixin use-sprite($sprite) {
+    background-image: sprite-url($common);
+    background-position: sprite-position($common, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: image-height(sprite-file($common, $sprite));
+    width: image-width(sprite-file($common, $sprite));
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: sprite-url($retina);
+        background-size: (image-width(sprite-path($retina)) / 2) (image-height(sprite-path($retina)) / 2);
+        background-position: round(nth(sprite-position($retina, $sprite), 1) / 2) round(nth(sprite-position($retina, $sprite), 2) / 2);
+        height: image-height(sprite-file($retina, $sprite)) / 2;
+        width: image-width(sprite-file($retina, $sprite)) / 2;
+    }
+}

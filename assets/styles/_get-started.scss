@@ -1,0 +1,48 @@
+@import "mixins";
+
+.get-started {
+    font-size: 20px;
+    margin: 92px 0;
+    padding: 0 187px;
+    letter-spacing: -0.4px;
+    line-height: 1.6;
+
+    .second-line {
+        margin: 20px 0 40px;
+    }
+
+    .btn {
+        width: 245px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+
+        span {
+            padding: 0;
+            line-height: 50px;
+        }
+    }
+
+    .bottom-link {
+        font-size: 16px;
+        font-style: italic;
+        color: #666;
+        text-decoration: underline;
+        display: block;
+        margin-top: 13px;
+        letter-spacing: -0.8px;
+        @include transition(color 100ms linear);
+
+        &:hover {
+            color: #006de0;
+        }
+    }
+
+    @include breakpoint-mobile {
+        margin-top: 42px;
+        margin-bottom: 55px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5625;
+    }
+}

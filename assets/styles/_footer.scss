@@ -1,0 +1,61 @@
+footer {
+    @include box-sizing(border-box);
+    background: #333;
+    font-style: italic;
+    font-size: 18px;
+    height: 72px;
+    text-align: left;
+    padding-top: 26px;
+    letter-spacing: -0.4px;
+    margin-top: 80px;
+
+    &, a {
+        color: #ccc;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .logo {
+        @include use-sprite(logo-small);
+        display: block;
+        float: right;
+        text-indent: -99999999px;
+        overflow: hidden;
+        margin-top: -18px;
+        opacity: .999;
+        @include transition(opacity 100ms linear);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .report {
+        a {
+            @include transition(color 100ms linear);
+
+            &:hover {
+                color: #006de0;
+            }
+        }
+
+    }
+
+    @include breakpoint-mobile {
+        margin-top: 42px;
+        padding-top: 0;
+        height: 40px;
+        overflow: hidden;
+
+        .logo {
+            margin: 11px auto 0;
+            float: none;
+        }
+
+        .report {
+            display: none;
+        }
+    }
+}

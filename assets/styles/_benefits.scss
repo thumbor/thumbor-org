@@ -1,0 +1,90 @@
+$benefit-margin: 30 + image_height(sprite_file($common, benefits-developers-desktop));
+$mobile-benefit-margin: 15 + image_height(sprite_file($common, benefits-developers));
+
+.benefits {
+    font-size: 0;
+    margin-top: 130px;
+
+    .benefit {
+        font-size: 16px;
+        line-height: 26px;
+        color: #666;
+
+        .title {
+            font-size: 20px;
+            line-height: 0.8;
+            color: #333;
+            letter-spacing: -1.4px;
+            margin-bottom: 25px;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            margin: 45px auto 0;
+        }
+
+        &.devs:before {
+            margin-bottom: $benefit-margin - image_height(sprite_file($common, benefits-developers-desktop));
+            @include desktop-sprite(benefits-developers-desktop);
+        }
+
+        &.ops:before {
+            margin-bottom: $benefit-margin - image_height(sprite_file($common, benefits-operations-desktop));
+            @include desktop-sprite(benefits-operations-desktop);
+        }
+
+        &.designers:before {
+            margin-bottom: $benefit-margin - image_height(sprite_file($common, benefits-designers-desktop));
+            @include desktop-sprite(benefits-designers-desktop);
+        }
+
+        &.pms:before {
+            margin-bottom: $benefit-margin - image_height(sprite_file($common, benefits-project-desktop));
+            @include desktop-sprite(benefits-project-desktop);
+        }
+    }
+
+    @include breakpoint-mobile {
+        margin-top: 50px;
+
+        .benefit {
+            font-size: 13px;
+            line-height: 17px;
+            width: 100%;
+            margin-right: 0;
+
+            &.devs, &.ops, &.designers, &.pms {
+                &:before {
+                    margin-top: 17px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &.devs:before {
+                margin-bottom: $mobile-benefit-margin - image_height(sprite_file($common, benefits-developers));
+                @include use-sprite(benefits-developers);
+            }
+
+            &.ops:before {
+                margin-bottom: $mobile-benefit-margin - image_height(sprite_file($common, benefits-operations));
+                @include use-sprite(benefits-operations);
+            }
+
+            &.designers:before {
+                margin-bottom: $mobile-benefit-margin - image_height(sprite_file($common, benefits-designers));
+                @include use-sprite(benefits-designers);
+            }
+
+            &.pms:before {
+                margin-bottom: $mobile-benefit-margin - image_height(sprite_file($common, benefits-project));
+                @include use-sprite(benefits-project);
+            }
+
+            .title {
+                margin-bottom: 14px;
+                font-size: 16px;
+            }
+        }
+    }
+}
